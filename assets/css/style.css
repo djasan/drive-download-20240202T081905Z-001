@@ -1,0 +1,320 @@
+body {
+    font-family: 'Oswald', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Barre de navigation supérieure */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 15px;
+}
+
+.logo img {
+    width: 200px;
+}
+
+.tabs {
+    list-style: none;
+    display: flex;
+}
+
+.tabs li {
+    margin-right: 10px;
+}
+
+.tabs a {
+    text-decoration: none;
+    color: #111010;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.rounded-icon {
+    border-radius: 50%;
+    background-color: #ff6600;
+    color: #fff;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Barre de navigation inférieure */
+.navbar-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FFB700;
+    padding: 20px;
+}
+
+.burger-button button {
+    background: none;
+    border: none;
+    font-size: 1rem;
+    color: #FFB700;
+    cursor: pointer;
+}
+
+/* Section principale avec la grille */
+.main-section {
+    padding: 5px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+}
+
+.box {
+    width: 100%;
+}
+
+.box img {
+    width: 100%;
+    height: auto;
+}
+
+/* Liste avec icône et H3 dans la barre de navigation inférieure */
+.nav-list {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-list li {
+    margin-right: 10px;
+}
+
+.nav-list i {
+    font-size: 1.5rem;
+    color: hwb(36 91% 7%);
+}
+
+.nav-list h3 {
+    color: #ffffff00;
+}
+
+button {
+    background-color: #FFB700;
+    border: none;
+}
+
+/* En-tête avec carrousel d'images */
+.main-header {
+    overflow: hidden;
+    position: relative;
+    color: #FFB700;
+    z-index: 1;
+}
+
+.header-content {
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    z-index: 2;
+}
+
+h1,
+h2 {
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: #FFD480;
+    font-size: 16px;
+}
+
+h2 {
+    color: #333;
+}
+
+.shop-button {
+    background-color: #FFB700;
+    color: #100f0f;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+
+
+
+
+/* Conteneur de la newsletter */
+.newsletter-container {
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+#newsletter-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FFB700;
+}
+
+label {
+    margin-bottom: 10px;
+}
+
+input {
+    padding: 10px;
+    margin-bottom: 15px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Styles pour les boutons */
+button {
+    background-color: #0d0d0d;
+    color: #fff;
+    padding: 10px 55px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #100f0f;
+}
+
+.footer-box1,
+.footer-box2 {
+    width: 12%;
+    box-sizing: border-box;
+    float: left;
+    /* Utilisation de float pour positionner à gauche et à droite */
+}
+
+.fb img {
+    width: 100%;
+    height: auto;
+}
+
+/* Ajout de clear pour éviter que d'autres éléments flottants interfèrent */
+.clear {
+    clear: both;
+}
+
+#coordonees {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #0f0e0e;
+    /* Ajout d'une couleur de fond à titre d'exemple */
+    padding: 20px;
+    display: flex;
+    /* Utilisation de flexbox pour aligner les éléments en ligne */
+    justify-content: space-between;
+    /* Espacement uniforme entre les éléments */
+    align-items: center;
+    /* Alignement vertical au centre */
+}
+
+.logo2 img {
+    width: 100%;
+    height: auto;
+
+}
+
+#coordonees p {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+#coordonees i {
+    color: #fff;
+    font-size: 14px;
+    display: block;
+    /* Pour assurer une disposition en colonne des icônes et du texte */
+    margin-bottom: 10px;
+    /* Espacement entre les icônes et le texte */
+}
+
+/* Ajout de styles spécifiques pour l'icône Instagram */
+.fa-brands.fa-square-instagram::before {
+    content: "\f16d";
+    /* Remplace le contenu par le logo Instagram */
+    font-family: 'Font Awesome 5 Brands';
+    margin-right: 10px;
+}
+
+/* Styles pour les écrans plus petits, par exemple les mobiles (576px) */
+@media (max-width: 576px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tabs {
+        margin-top: 10px;
+    }
+
+    .tabs li {
+        margin-right: 0;
+        margin-bottom: 5px;
+    }
+
+    .box {
+        width: 100%;
+    }
+
+    .nav-list {
+        display: flex;
+    }
+
+    .nav-list li {
+        margin-right: 10px;
+    }
+
+
+
+}
+
+/* Styles pour les écrans moyens à grands, par exemple les ordinateurs de bureau (1200px) */
+@media (min-width: 1200px) {
+    .navbar {
+        padding: 20px;
+    }
+
+    .tabs {
+        margin-right: 20px;
+    }
+
+    .box {
+        width: calc(25% - 20px);
+    }
+
+    .burger-button {
+        display: none;
+    }
+
+    .grid-container {
+        grid-template-columns: repeat
+    }
+
+    .footer-box1,
+    .footer-box2 {
+        width: 25%;
+        /* Les deux colonnes occupent maintenant 100% de la largeur */
+        float: none;
+        /* Annuler le flottement pour qu'elles s'empilent verticalement */
+    }
+}

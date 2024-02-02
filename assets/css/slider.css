@@ -1,0 +1,45 @@
+/* ... Vos styles existants ... */
+
+/* Slider Grid */
+.slider-container {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    max-width: 1200px; /* Ajustez la largeur maximale du slider selon vos besoins */
+    margin: 0 auto;
+  }
+  
+  .slider-grid {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+ 
+  
+  @keyframes carousel {
+    0% { transform: translateX(0); }
+    33.33% { transform: translateX(-100%); }
+    66.66% { transform: translateX(-200%); }
+    100% { transform: translateX(0); }
+  }
+  
+  .slider-grid {
+    animation: carousel 15s infinite linear;
+  }
+  
+  .slide {
+    flex: 0 0 100%;
+    box-sizing: border-box;
+  }
+  
+  .slide img {
+    width: 100%; /* Assurez-vous que les images occupent la largeur de la slide */
+  }
+ 
+  
+ 
+  
+  /* ... Vos autres styles ... */
+  
+ 
+  
